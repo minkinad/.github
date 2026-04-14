@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible bug or regression
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Please keep the report concrete and reproducible. If you used AI tools while preparing this issue, make sure the final text still reflects what you actually observed.
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: Current behavior
+      description: What is happening right now?
+      placeholder: A clear description of the bug
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+      placeholder: Describe the intended result
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Share exact steps, a minimal repo, or a playground link.
+      placeholder: |
+        1. Go to ...
+        2. Run ...
+        3. See error ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: What version, tag, branch, or commit are you using?
+      placeholder: v1.2.3 or 1a2b3c4
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, runtime, browser, package manager, or anything else relevant.
+      placeholder: Node 22, pnpm 10, macOS 15, Chrome 135
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste stack traces, terminal output, or screenshots if they help.
+      render: shell
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before opening this report.
+          required: true
+        - label: I can still reproduce the issue on the latest available version.
+          required: false
+        - label: I am describing a real bug, not a support question or setup problem.
+          required: true

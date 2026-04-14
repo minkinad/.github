@@ -1,0 +1,25 @@
+name: Docs or typo fix
+description: Report a typo, broken link, or small docs issue
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Where is the problem?
+      placeholder: File path, page URL, or section title
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be corrected?
+      description: Share the typo, broken link, or docs issue you found.
+      placeholder: Describe the problem and, if possible, suggest the fix
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Small docs fixes are welcome. If you plan to open a pull request, bundling several tiny typo fixes together is usually preferred.

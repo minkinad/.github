@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contribution guide
+    url: https://github.com/minkinad/contribute
+    about: Read the shared contribution process, commit style, setup notes, and AI usage expectations.
+  - name: Maintainer profile
+    url: https://github.com/minkinad
+    about: Use the profile and linked channels for broader questions or contact outside a specific repository.
